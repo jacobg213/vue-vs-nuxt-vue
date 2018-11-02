@@ -24,8 +24,8 @@ export default {
   computed: {
     ...mapState(['book']),
   },
-  created() {
-    this.getBook();
+  async created() {
+    await this.getBook();
   },
   methods: {
     ...mapActions(['getBook']),
